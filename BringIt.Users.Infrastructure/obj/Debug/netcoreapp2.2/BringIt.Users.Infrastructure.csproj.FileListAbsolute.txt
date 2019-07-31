@@ -1,0 +1,12 @@
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Users.Infrastructure\bin\Debug\netcoreapp2.2\BringIt.Users.Infrastructure.deps.json
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Users.Infrastructure\bin\Debug\netcoreapp2.2\BringIt.Users.Infrastructure.dll
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Users.Infrastructure\bin\Debug\netcoreapp2.2\BringIt.Users.Infrastructure.pdb
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Users.Infrastructure\bin\Debug\netcoreapp2.2\BringIt.Users.Core.dll
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Users.Infrastructure\bin\Debug\netcoreapp2.2\BringIt.Users.Core.pdb
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Users.Infrastructure\obj\Debug\netcoreapp2.2\BringIt.Users.Infrastructure.csprojAssemblyReference.cache
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Users.Infrastructure\obj\Debug\netcoreapp2.2\BringIt.Users.Infrastructure.csproj.CoreCompileInputs.cache
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Users.Infrastructure\obj\Debug\netcoreapp2.2\BringIt.Users.Infrastructure.AssemblyInfoInputs.cache
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Users.Infrastructure\obj\Debug\netcoreapp2.2\BringIt.Users.Infrastructure.AssemblyInfo.cs
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Users.Infrastructure\obj\Debug\netcoreapp2.2\BringIt.Users.Infrastructure.csproj.CopyComplete
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Users.Infrastructure\obj\Debug\netcoreapp2.2\BringIt.Users.Infrastructure.dll
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Users.Infrastructure\obj\Debug\netcoreapp2.2\BringIt.Users.Infrastructure.pdb

@@ -1,0 +1,8 @@
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Orders.Infrastrucutre\bin\Debug\netcoreapp2.2\BringIt.Orders.Infrastrucutre.deps.json
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Orders.Infrastrucutre\bin\Debug\netcoreapp2.2\BringIt.Orders.Infrastrucutre.dll
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Orders.Infrastrucutre\bin\Debug\netcoreapp2.2\BringIt.Orders.Infrastrucutre.pdb
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Orders.Infrastrucutre\obj\Debug\netcoreapp2.2\BringIt.Orders.Infrastrucutre.csproj.CoreCompileInputs.cache
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Orders.Infrastrucutre\obj\Debug\netcoreapp2.2\BringIt.Orders.Infrastrucutre.AssemblyInfoInputs.cache
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Orders.Infrastrucutre\obj\Debug\netcoreapp2.2\BringIt.Orders.Infrastrucutre.AssemblyInfo.cs
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Orders.Infrastrucutre\obj\Debug\netcoreapp2.2\BringIt.Orders.Infrastrucutre.dll
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Orders.Infrastrucutre\obj\Debug\netcoreapp2.2\BringIt.Orders.Infrastrucutre.pdb

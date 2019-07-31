@@ -1,0 +1,118 @@
+services:
+  bringit.auth.api:
+    build:
+      context: F:\DSProject\Trunk-BringIt\BringIt
+      dockerfile: BringIt.Auth.Api/Dockerfile
+    depends_on:
+    - sql.data
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://0.0.0.0:80
+      ConnectionString: Server=sql.data;Database=BringIt;User Id=sa;Password=Pass@word
+    extra_hosts:
+      CESARDLSURFBOOK: 10.0.75.1
+    image: bringitauthapi
+    ports:
+    - published: 7003
+      target: 80
+  bringit.gateway.api:
+    build:
+      context: F:\DSProject\Trunk-BringIt\BringIt
+      dockerfile: BringIt.Gateway.Api/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: bringitgatewayapi
+    ports:
+    - published: 7000
+      target: 80
+  bringit.orders.api.v1:
+    build:
+      context: F:\DSProject\Trunk-BringIt\BringIt
+      dockerfile: BringIt.Orders.Api/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://0.0.0.0:3001
+    image: bringitordersapi
+    ports:
+    - published: 3001
+      target: 3001
+  bringit.orders.api.v2:
+    build:
+      context: F:\DSProject\Trunk-BringIt\BringIt
+      dockerfile: BringIt.Orders.Api/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://0.0.0.0:3011
+    image: bringitordersapi
+    ports:
+    - published: 3011
+      target: 3011
+  bringit.restaurants.api.v1:
+    build:
+      context: F:\DSProject\Trunk-BringIt\BringIt
+      dockerfile: BringIt.Restaurants.Api/Dockerfile
+    depends_on:
+    - sql.data
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://0.0.0.0:3022
+      ConnectionString: Server=sql.data;Database=BringIt;User Id=sa;Password=Pass@word
+    extra_hosts:
+      CESARDLSURFBOOK: 10.0.75.1
+    image: bringitrestaurantsapi
+    ports:
+    - published: 3022
+      target: 3022
+  bringit.restaurants.api.v2:
+    build:
+      context: F:\DSProject\Trunk-BringIt\BringIt
+      dockerfile: BringIt.Restaurants.Api/Dockerfile
+    depends_on:
+    - sql.data
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://0.0.0.0:3002
+      ConnectionString: Server=sql.data;Database=BringIt;User Id=sa;Password=Pass@word
+    extra_hosts:
+      CESARDLSURFBOOK: 10.0.75.1
+    image: bringitrestaurantsapi
+    ports:
+    - published: 3002
+      target: 3002
+  bringit.users.api.v1:
+    build:
+      context: F:\DSProject\Trunk-BringIt\BringIt
+      dockerfile: BringIt.Users.Api/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://0.0.0.0:4001
+      ConnectionString: Server=sql.data;Database=BringIt;User Id=sa;Password=Pass@word
+    extra_hosts:
+      CESARDLSURFBOOK: 10.0.75.1
+    image: bringitusersapi
+    ports:
+    - published: 4001
+      target: 4001
+  bringit.users.api.v2:
+    build:
+      context: F:\DSProject\Trunk-BringIt\BringIt
+      dockerfile: BringIt.Users.Api/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://0.0.0.0:4002
+      ConnectionString: Server=sql.data;Database=BringIt;User Id=sa;Password=Pass@word
+    extra_hosts:
+      CESARDLSURFBOOK: 10.0.75.1
+    image: bringitusersapi
+    ports:
+    - published: 4002
+      target: 4002
+  sql.data:
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: Pass@word
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    ports:
+    - published: 5434
+      target: 1433
+version: '3.4'

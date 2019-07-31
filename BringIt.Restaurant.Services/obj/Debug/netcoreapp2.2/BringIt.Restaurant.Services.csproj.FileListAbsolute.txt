@@ -1,0 +1,14 @@
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Restaurant.Services\bin\Debug\netcoreapp2.2\BringIt.Restaurant.Services.deps.json
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Restaurant.Services\bin\Debug\netcoreapp2.2\BringIt.Restaurant.Services.dll
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Restaurant.Services\bin\Debug\netcoreapp2.2\BringIt.Restaurant.Services.pdb
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Restaurant.Services\obj\Debug\netcoreapp2.2\BringIt.Restaurant.Services.csprojAssemblyReference.cache
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Restaurant.Services\obj\Debug\netcoreapp2.2\BringIt.Restaurant.Services.csproj.CoreCompileInputs.cache
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Restaurant.Services\obj\Debug\netcoreapp2.2\BringIt.Restaurant.Services.AssemblyInfoInputs.cache
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Restaurant.Services\obj\Debug\netcoreapp2.2\BringIt.Restaurant.Services.AssemblyInfo.cs
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Restaurant.Services\obj\Debug\netcoreapp2.2\BringIt.Restaurant.Services.dll
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Restaurant.Services\obj\Debug\netcoreapp2.2\BringIt.Restaurant.Services.pdb
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Restaurant.Services\bin\Debug\netcoreapp2.2\BringIt.Restaurant.Infrastrucutre.dll
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Restaurant.Services\bin\Debug\netcoreapp2.2\BringIt.Restaurants.Core.dll
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Restaurant.Services\bin\Debug\netcoreapp2.2\BringIt.Restaurant.Infrastrucutre.pdb
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Restaurant.Services\bin\Debug\netcoreapp2.2\BringIt.Restaurants.Core.pdb
+F:\DSProject\Trunk-BringIt\BringIt\BringIt.Restaurant.Services\obj\Debug\netcoreapp2.2\BringIt.Restaurant.Services.csproj.CopyComplete

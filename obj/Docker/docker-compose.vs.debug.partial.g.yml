@@ -1,0 +1,153 @@
+version: '3.4'
+
+services:
+  bringit.auth.api:
+    image: bringitauthapi:dev
+    build:
+      target: base
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_bringit.auth.api$
+    volumes:
+      - F:\DSProject\Trunk-BringIt\BringIt\BringIt.Auth.Api:/app
+      - C:\Users\LasangaGuruge\vsdbg\vs2017u5:/remote_debugger:ro
+#$nuget_volume_mapping_bringit.auth.api$
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_bringit.auth.api$ "
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/bash -c \"if PID=$$(pidof -x dotnet); then kill $$PID; fi\""
+
+  bringit.gateway.api:
+    image: bringitgatewayapi:dev
+    build:
+      target: base
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_bringit.gateway.api$
+    volumes:
+      - F:\DSProject\Trunk-BringIt\BringIt\BringIt.Gateway.Api:/app
+      - C:\Users\LasangaGuruge\vsdbg\vs2017u5:/remote_debugger:ro
+#$nuget_volume_mapping_bringit.gateway.api$
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_bringit.gateway.api$ "
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/bash -c \"if PID=$$(pidof -x dotnet); then kill $$PID; fi\""
+
+
+  bringit.orders.api.v1:
+    image: bringitordersapi:dev
+    build:
+      target: base
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_bringit.orders.api.v1$
+    volumes:
+      - F:\DSProject\Trunk-BringIt\BringIt\BringIt.Orders.Api:/app
+      - C:\Users\LasangaGuruge\vsdbg\vs2017u5:/remote_debugger:ro
+#$nuget_volume_mapping_bringit.orders.api.v1$
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_bringit.orders.api.v1$ "
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/bash -c \"if PID=$$(pidof -x dotnet); then kill $$PID; fi\""
+
+
+  bringit.orders.api.v2:
+    image: bringitordersapi:dev
+    build:
+      target: base
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_bringit.orders.api.v2$
+    volumes:
+      - F:\DSProject\Trunk-BringIt\BringIt\BringIt.Orders.Api:/app
+      - C:\Users\LasangaGuruge\vsdbg\vs2017u5:/remote_debugger:ro
+#$nuget_volume_mapping_bringit.orders.api.v2$
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_bringit.orders.api.v2$ "
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/bash -c \"if PID=$$(pidof -x dotnet); then kill $$PID; fi\""
+
+
+  bringit.restaurants.api.v1:
+    image: bringitrestaurantsapi:dev
+    build:
+      target: base
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_bringit.restaurants.api.v1$
+    volumes:
+      - F:\DSProject\Trunk-BringIt\BringIt\BringIt.Restaurants.Api:/app
+      - C:\Users\LasangaGuruge\vsdbg\vs2017u5:/remote_debugger:ro
+#$nuget_volume_mapping_bringit.restaurants.api.v1$
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_bringit.restaurants.api.v1$ "
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/bash -c \"if PID=$$(pidof -x dotnet); then kill $$PID; fi\""
+
+
+  bringit.restaurants.api.v2:
+    image: bringitrestaurantsapi:dev
+    build:
+      target: base
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_bringit.restaurants.api.v2$
+    volumes:
+      - F:\DSProject\Trunk-BringIt\BringIt\BringIt.Restaurants.Api:/app
+      - C:\Users\LasangaGuruge\vsdbg\vs2017u5:/remote_debugger:ro
+#$nuget_volume_mapping_bringit.restaurants.api.v2$
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_bringit.restaurants.api.v2$ "
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/bash -c \"if PID=$$(pidof -x dotnet); then kill $$PID; fi\""
+
+
+  bringit.users.api.v1:
+    image: bringitusersapi:dev
+    build:
+      target: base
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_bringit.users.api.v1$
+    volumes:
+      - F:\DSProject\Trunk-BringIt\BringIt\BringIt.Users.Api:/app
+      - C:\Users\LasangaGuruge\vsdbg\vs2017u5:/remote_debugger:ro
+#$nuget_volume_mapping_bringit.users.api.v1$
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_bringit.users.api.v1$ "
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/bash -c \"if PID=$$(pidof -x dotnet); then kill $$PID; fi\""
+
+
+  bringit.users.api.v2:
+    image: bringitusersapi:dev
+    build:
+      target: base
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_bringit.users.api.v2$
+    volumes:
+      - F:\DSProject\Trunk-BringIt\BringIt\BringIt.Users.Api:/app
+      - C:\Users\LasangaGuruge\vsdbg\vs2017u5:/remote_debugger:ro
+#$nuget_volume_mapping_bringit.users.api.v2$
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_bringit.users.api.v2$ "
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/bash -c \"if PID=$$(pidof -x dotnet); then kill $$PID; fi\""
+
