@@ -1,0 +1,88 @@
+version: '3.4'
+
+services:
+  bringit.gateway.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "7000:80"
+
+  bringit.auth.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://0.0.0.0:80
+      - ConnectionString=Server=sql.data;Database=BringIt;User Id=sa;Password=Pass@word
+    ports:
+      - "7003:80"
+    extra_hosts:
+      - "CESARDLSURFBOOK:10.0.75.1"
+    depends_on:
+      - sql.data
+
+  bringit.orders.api.v1:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://0.0.0.0:3001
+    ports:
+      - "3001:3001"
+
+  bringit.orders.api.v2:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://0.0.0.0:3011
+    ports:
+      - "3011:3011"
+
+  bringit.restaurants.api.v1:
+    environment:
+       - ASPNETCORE_ENVIRONMENT=Development
+       - ASPNETCORE_URLS=http://0.0.0.0:3022
+       - ConnectionString=Server=sql.data;Database=BringIt;User Id=sa;Password=Pass@word
+    ports:
+       - "3022:3022"
+    extra_hosts:
+      - "CESARDLSURFBOOK:10.0.75.1"
+    depends_on:
+      - sql.data
+
+  bringit.restaurants.api.v2:
+    environment:
+       - ASPNETCORE_ENVIRONMENT=Development
+       - ASPNETCORE_URLS=http://0.0.0.0:3002
+       - ConnectionString=Server=sql.data;Database=BringIt;User Id=sa;Password=Pass@word
+    ports:
+       - "3002:3002"
+    extra_hosts:
+      - "CESARDLSURFBOOK:10.0.75.1"
+    depends_on:
+      - sql.data
+
+  bringit.users.api.v1:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://0.0.0.0:4001
+      - ConnectionString=Server=sql.data;Database=BringIt;User Id=sa;Password=Pass@word
+    extra_hosts:
+      - "CESARDLSURFBOOK:10.0.75.1"
+    ports:
+      - "4001:4001"
+
+  bringit.users.api.v2:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://0.0.0.0:4002
+      - ConnectionString=Server=sql.data;Database=BringIt;User Id=sa;Password=Pass@word
+    extra_hosts:
+      - "CESARDLSURFBOOK:10.0.75.1"
+    ports:
+      - "4002:4002"
+
+  sql.data:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    environment:
+      - SA_PASSWORD=Pass@word
+      - ACCEPT_EULA=Y
+    ports:
+      - "5434:1433"
+
+

@@ -1,0 +1,52 @@
+version: '3.4'
+
+services:
+
+  bringit.gateway.api:
+    image: ${DOCKER_REGISTRY-}bringitgatewayapi
+    build:
+      context: .
+      dockerfile: BringIt.Gateway.Api/Dockerfile
+
+  bringit.auth.api:
+    image: ${DOCKER_REGISTRY-}bringitauthapi
+    build:
+      context: .
+      dockerfile: BringIt.Auth.Api/Dockerfile
+
+  bringit.orders.api.v1:
+    image: ${DOCKER_REGISTRY-}bringitordersapi
+    build:
+      context: .
+      dockerfile: BringIt.Orders.Api/Dockerfile
+
+  bringit.orders.api.v2:
+    image: ${DOCKER_REGISTRY-}bringitordersapi
+    build:
+      context: .
+      dockerfile: BringIt.Orders.Api/Dockerfile
+
+  bringit.restaurants.api.v1:
+    image: ${DOCKER_REGISTRY-}bringitrestaurantsapi
+    build:
+      context: .
+      dockerfile: BringIt.Restaurants.Api/Dockerfile
+
+  bringit.restaurants.api.v2:
+    image: ${DOCKER_REGISTRY-}bringitrestaurantsapi
+    build:
+      context: .
+      dockerfile: BringIt.Restaurants.Api/Dockerfile
+
+  bringit.users.api.v1:
+    image: ${DOCKER_REGISTRY-}bringitusersapi
+    build:
+      context: .
+      dockerfile: BringIt.Users.Api/Dockerfile
+
+  bringit.users.api.v2:
+    image: ${DOCKER_REGISTRY-}bringitusersapi
+    build:
+      context: .
+      dockerfile: BringIt.Users.Api/Dockerfile
+
